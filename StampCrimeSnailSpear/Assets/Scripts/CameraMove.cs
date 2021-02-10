@@ -21,7 +21,7 @@ public class CameraMove : MonoBehaviour
     {
         if (player)
         {
-            Vector3 spriteLoc = player.transform.position;
+            Vector3 spriteLoc = Camera.main.WorldToScreenPoint(player.transform.position);
 
             Vector3 pos = transform.position;
 
