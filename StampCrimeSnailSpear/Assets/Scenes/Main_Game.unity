@@ -314,6 +314,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147778258}
   m_CullTransparentMesh: 1
+--- !u!1 &313084973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353959630793790696, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
+  m_PrefabInstance: {fileID: 122662042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &573186998
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +374,7 @@ GameObject:
   - component: {fileID: 591809352}
   - component: {fileID: 591809351}
   - component: {fileID: 591809350}
+  - component: {fileID: 591809353}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -441,6 +447,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591809353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591809349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17111e18ccbfcb248b01e8c9f8b8e1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 313084973}
+  boundaryPercent: 10
 --- !u!1 &1360319233
 GameObject:
   m_ObjectHideFlags: 0
