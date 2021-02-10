@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 313084973}
-  boundaryPercent: 10
+  boundaryPercent: 0.1
 --- !u!1 &1360319233
 GameObject:
   m_ObjectHideFlags: 0

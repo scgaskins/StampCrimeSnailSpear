@@ -10,11 +10,16 @@ public class CameraMove : MonoBehaviour
 
     private float lBound;
     private float rBound;
+    private float uBound;
+    private float dBound;
+
     // Start is called before the first frame update
     void Start()
     {
         lBound = boundaryPercent * Camera.main.pixelWidth;
         rBound = Camera.main.pixelWidth - lBound;
+        dBound = Camera.main.pixelHeight * boundaryPercent;
+        uBound = Camera.main.pixelHeight - dBound;
     }
 
     void FixedUpdate()
@@ -31,6 +36,13 @@ public class CameraMove : MonoBehaviour
             } else if(spriteLoc.x > rBound)
             {
                 pos.x += spriteLoc.x - rBound;
+            }
+            if (spriteLoc.y > uBound)
+            {
+                pos.y += spriteLoc.y - uBound;
+            } else if (spriteLoc.y < dBound)
+            {
+                pos.y -= dBound - spriteLoc.y;
             }
 
             transform.position = pos;
