@@ -22,6 +22,7 @@ public class StampCollectionDetector : MonoBehaviour
         if (collision.collider.name == "Snail")
         {
             GameManager.Instance.IncrementScore(1);
+            GameManager.Instance.IncrementStampCount(-1);
             Destroy(gameObject);
         }
     }
