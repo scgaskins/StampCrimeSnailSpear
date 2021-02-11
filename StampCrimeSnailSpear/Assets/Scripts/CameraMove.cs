@@ -7,6 +7,7 @@ public class CameraMove : MonoBehaviour
     public GameObject player;
 
     public float boundaryPercent;
+    public float easing = 0.5f;
 
     private float lBound;
     private float rBound;
@@ -44,6 +45,8 @@ public class CameraMove : MonoBehaviour
             {
                 pos.y -= dBound - spriteLoc.y;
             }
+
+            pos = Vector3.Lerp(transform.position, pos, easing);
 
             transform.position = pos;
         }
