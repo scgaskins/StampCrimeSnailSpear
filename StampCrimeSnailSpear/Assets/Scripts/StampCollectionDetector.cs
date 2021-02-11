@@ -17,7 +17,7 @@ public class StampCollectionDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -25,15 +25,12 @@ public class StampCollectionDetector : MonoBehaviour
     {
         if (collision.collider.name == "Snail")
         {
+            ps.transform.position = gameObject.transform.position;
+            ps.Play();
             GameManager.Instance.IncrementScore(1);
             GameManager.Instance.IncrementStampCount(-1);
             Destroy(gameObject);
         }
     }
-
-    private void OnDestroy()
-    {
-        Debug.Log("Particle plays here");
-        ps.Play();   
-    }
 }
+

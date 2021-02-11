@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8e051a0354a334385eb4123e7869f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xRandom: 15
+  yRandom: 15
   stamp: {fileID: 2586722117911185678, guid: 7fd9135e303930346b1c0bf14ffeabbc, type: 3}
   maxStampCount: 10
 --- !u!4 &57129634
@@ -221,6 +223,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2353959630793790702, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353959630793790703, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
