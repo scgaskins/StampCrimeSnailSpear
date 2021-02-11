@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRandom: 15
   yRandom: 15
-  stamp: {fileID: 2586722117911185678, guid: 7fd9135e303930346b1c0bf14ffeabbc, type: 3}
+  stamp: {fileID: 122265993111733406, guid: d0ba2638ec394bb41b09b3b3c2b97b61, type: 3}
   maxStampCount: 10
 --- !u!4 &57129634
 Transform:
@@ -265,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: 169.5}
+  m_AnchoredPosition: {x: 260.2, y: 174.79999}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147778260

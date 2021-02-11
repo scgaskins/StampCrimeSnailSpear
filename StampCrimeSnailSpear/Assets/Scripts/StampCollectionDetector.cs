@@ -29,7 +29,7 @@ public class StampCollectionDetector : MonoBehaviour
             ps.Play();
             GameManager.Instance.IncrementScore(1);
             GameManager.Instance.IncrementStampCount(-1);
-            Destroy(gameObject);
+            Destroy(gameObject, 1.5f);
         }
     }
 }
