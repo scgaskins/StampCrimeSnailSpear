@@ -6,12 +6,11 @@ public class StampCollectionDetector : MonoBehaviour
 {
 
     public GameObject particles;
-    private ParticleSystem ps;
 
     // Start is called before the first frame update
     void Start()
     {
-        ps = particles.GetComponent<ParticleSystem>();
+        
     }
 
     // Update is called once per frame
@@ -25,11 +24,11 @@ public class StampCollectionDetector : MonoBehaviour
     {
         if (collision.collider.name == "Snail")
         {
-            ps.transform.position = gameObject.transform.position;
-            ps.Play();
+            particles.transform.position = gameObject.transform.position;
+            Instantiate(particles);
             GameManager.Instance.IncrementScore(1);
             GameManager.Instance.IncrementStampCount(-1);
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject);
         }
     }
 }
