@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2353959630793790701}
   - component: {fileID: 2353959630793790691}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

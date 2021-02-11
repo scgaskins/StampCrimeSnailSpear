@@ -28,7 +28,12 @@ public class StampCollectionDetector : MonoBehaviour
             GameManager.Instance.IncrementScore(1);
             GameManager.Instance.IncrementStampCount(-1);
             Destroy(gameObject);
-            ps.Play();
         }
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("Particle plays here");
+        ps.Play();   
     }
 }
