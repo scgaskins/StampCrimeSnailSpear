@@ -154,10 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRandom: 15
   yRandom: 15
-  guards:
-  - {fileID: 6230279983879058171, guid: 8753414ed484ab04c8224bf1eadc6211, type: 3}
-  - {fileID: 6561592211413927501, guid: d2bcffae7fbf1a14a885f83dfe1e1443, type: 3}
-  - {fileID: 8508581127837836401, guid: 775744f326f96f049ac1c1e5c5b10009, type: 3}
+  guard: {fileID: 6230279983879058171, guid: 8753414ed484ab04c8224bf1eadc6211, type: 3}
   stamp: {fileID: 122265993111733406, guid: d0ba2638ec394bb41b09b3b3c2b97b61, type: 3}
   maxStampCount: 10
 --- !u!4 &57129634
@@ -181,6 +178,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2353959630793790691, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
+      propertyPath: leftSprite
+      value: 
+      objectReference: {fileID: 3287443558119901482, guid: 074b0958871a2ea4dacb363d28a6e4d8, type: 3}
+    - target: {fileID: 2353959630793790691, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
+      propertyPath: rightSprite
+      value: 
+      objectReference: {fileID: -6207193392188836992, guid: 0522b42899d012f4794ad6fdbd4a2fc8, type: 3}
     - target: {fileID: 2353959630793790696, guid: a288fae4759a9d94fa28f2ef7d580f19, type: 3}
       propertyPath: m_Name
       value: Snail
@@ -2177,7 +2182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903478742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451007046}

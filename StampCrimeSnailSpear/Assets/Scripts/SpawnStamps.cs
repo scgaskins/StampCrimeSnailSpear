@@ -8,7 +8,7 @@ public class SpawnStamps : MonoBehaviour
     public float xRandom = 15f;
     public float yRandom = 15f;
 
-    public GameObject[] guards;
+    public GameObject guard;
     public GameObject stamp;
     public int maxStampCount;
 
@@ -31,10 +31,11 @@ public class SpawnStamps : MonoBehaviour
     private void SpawnStamp()
     {
         GameObject stampInstance = Instantiate(stamp);
-        stampInstance.transform.position = new Vector2(Random.Range(-xRandom, xRandom), Random.Range(-yRandom, yRandom));
-        Vector2 stampPos = stamp.transform.position;
-        GameObject guardInstance = Instantiate(guards[Random.Range(0, 2)]);
-        guardInstance.transform.position = new Vector2(stampPos.x + (Random.Range(-3, 3)), stampPos.y + (Random.Range(-3, 3)));
+        Vector2 stampPos = new Vector2(Random.Range(-xRandom, xRandom), Random.Range(-yRandom, yRandom));
+        stampInstance.transform.position = stampPos;
+
+        GameObject guardInstance = Instantiate(guard);
+        guardInstance.transform.position = stampPos;
         GameManager.Instance.IncrementStampCount(1);
     }
 }
