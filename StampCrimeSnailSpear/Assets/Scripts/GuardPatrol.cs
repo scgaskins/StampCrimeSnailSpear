@@ -81,7 +81,7 @@ public class GuardPatrol : MonoBehaviour
     {
         if(collision.gameObject.name == "Snail")
         {
-            SceneManager.LoadScene("Game_Over");
+            GameManager.Instance.GameOver();
         }
     }
 }

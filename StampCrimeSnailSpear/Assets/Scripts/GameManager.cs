@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject events;
+    public GameObject canvas;
     public static GameManager Instance { get; private set; }
-    public TextMeshProUGUI textBox;
+    public GameObject startButton;
+    public TextMeshProUGUI startButtonTextBox;
+    public TextMeshProUGUI scoreTextBox;
+    public TextMeshProUGUI titleTextBox;
     private int score;
     private int stampCount;
 
@@ -16,6 +22,8 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(events);
+            DontDestroyOnLoad(canvas);
         } else
         {
             Destroy(gameObject);
@@ -27,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         score = 0;
         stampCount = 0;
-        textBox.text = "Stamps Stolen: " + score;
+        scoreTextBox.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,6 +57,26 @@ public class GameManager : MonoBehaviour
     public void IncrementScore(int changeBy)
     {
         score += changeBy;
-        textBox.text = "Stamps Stolen: " + score;
+        scoreTextBox.text = "Stamps Stolen: " + score;
+    }
+
+    public void StartButton()
+    {
+        startButton.SetActive(false);
+        titleTextBox.gameObject.SetActive(false);
+        scoreTextBox.text = "Stamps Stolen: " + score;
+        scoreTextBox.gameObject.SetActive(true);
+        SceneManager.LoadScene("Main_Game");
+    }
+
+    public void GameOver()
+    {
+        StopAllCoroutines();
+        stampCount = 0;
+        score = 0;
+        scoreTextBox.gameObject.SetActive(false);
+        startButton.SetActive(true);
+        startButtonTextBox.SetText("Try again?");
+        SceneManager.LoadScene("Game_Over");
     }
 }
