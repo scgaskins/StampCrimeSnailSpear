@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public GameObject dialogText;
 
+    private Coroutine dialogCo;
+
     private int score;
     private int stampCount;
 
@@ -59,10 +61,21 @@ public class GameManager : MonoBehaviour
     public void StartDialog(string text)
     {
         dialogBox.SetActive(true);
+        dialogCo = StartCoroutine(TypeText(text));
     }
     public void HideDialog()
     {
         dialogBox.SetActive(false);
+        StopCoroutine(dialogCo);
+    }
+    IEnumerator TypeText(string text)
+    {
+        dialogText.GetComponent<TextMeshProUGUI>().text = "";
+        foreach (char c in text.ToCharArray())
+        {
+            dialogText.GetComponent<TextMeshProUGUI>().text += c;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 
     public void IncrementStampCount(int changeInStamps)

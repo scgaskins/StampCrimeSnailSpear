@@ -170,7 +170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &122662042
 PrefabInstance:
@@ -47641,6 +47641,128 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &452215105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1357149480362243881, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: text
+      value: The post office does have some dark bricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.74802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.117548
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161050513269778360, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_Name
+      value: signpost (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+--- !u!1001 &461817882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1357149480362243881, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: text
+      value: Why is this sign here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.494484
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.961891
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161050513269778360, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_Name
+      value: signpost (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
 --- !u!1 &480355668
 GameObject:
   m_ObjectHideFlags: 0
@@ -50841,6 +50963,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &508320595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1357149480362243881, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: text
+      value: I think the post office was built with bricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161050513269778360, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_Name
+      value: signpost (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
 --- !u!1 &591809349
 GameObject:
   m_ObjectHideFlags: 0
@@ -57173,6 +57356,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37ea0e87b5f04d488de2545edcc8754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &716968774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1357149480362243881, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: text
+      value: The post office is very small
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.770962
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.476152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161050513269778360, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: m_Name
+      value: signpost (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
 --- !u!1 &770728129
 GameObject:
   m_ObjectHideFlags: 0
@@ -57185,6 +57429,7 @@ GameObject:
   - component: {fileID: 770728133}
   - component: {fileID: 770728132}
   - component: {fileID: 770728131}
+  - component: {fileID: 770728134}
   m_Layer: 0
   m_Name: False Door Trigger
   m_TagString: Untagged
@@ -57556,6 +57801,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &770728134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770728129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e3cf99977f9f4fb88fd799ef5f838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Hmmmmm, this isn't the post office
 --- !u!1 &903478742
 GameObject:
   m_ObjectHideFlags: 0
@@ -57602,7 +57860,7 @@ Transform:
   - {fileID: 683938574}
   - {fileID: 770728130}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4375059200056241707
 PrefabInstance:
@@ -57611,6 +57869,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1357149480362243881, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
+      propertyPath: text
+      value: Hey, the post office is on the edge of the city
+      objectReference: {fileID: 0}
     - target: {fileID: 1528248502338190700, guid: 9a5068ec2d2be7143af8b9ef4da2cd32, type: 3}
       propertyPath: m_RootOrder
       value: 2
