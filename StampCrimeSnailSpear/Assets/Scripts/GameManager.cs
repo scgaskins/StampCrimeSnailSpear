@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public GameObject startButton;
     public TextMeshProUGUI startButtonTextBox;
+    public GameObject instructionButton;
+    public TextMeshProUGUI instructionButtonText;
+    private bool showingInstructions;
+    public TextMeshProUGUI instructionText;
     public TextMeshProUGUI scoreTextBox;
     public TextMeshProUGUI titleTextBox;
     public TextMeshProUGUI finalScoreTextBox;
@@ -38,6 +42,8 @@ public class GameManager : MonoBehaviour
         stampCount = 0;
         scoreTextBox.gameObject.SetActive(false);
         finalScoreTextBox.gameObject.SetActive(false);
+        instructionText.gameObject.SetActive(false);
+        showingInstructions = false;
     }
 
     // Update is called once per frame
@@ -65,6 +71,7 @@ public class GameManager : MonoBehaviour
     public void StartButton()
     {
         startButton.SetActive(false);
+        instructionButton.SetActive(false);
         titleTextBox.gameObject.SetActive(false);
         finalScoreTextBox.gameObject.SetActive(false);
         stampCount = 0;
@@ -72,6 +79,22 @@ public class GameManager : MonoBehaviour
         scoreTextBox.text = "Stamps Stolen: " + score;
         scoreTextBox.gameObject.SetActive(true);
         SceneManager.LoadScene("Main_Game");
+    }
+
+    public void ShowInstructions()
+    {
+        showingInstructions = !showingInstructions;
+        if (showingInstructions)
+        {
+            startButton.SetActive(false);
+            instructionText.gameObject.SetActive(true);
+            instructionButtonText.SetText("Back to Menu");
+        } else
+        {
+            instructionButtonText.SetText("View Instructions");
+            instructionText.gameObject.SetActive(false);
+            startButton.SetActive(true);
+        }
     }
 
     public void GameOver()
