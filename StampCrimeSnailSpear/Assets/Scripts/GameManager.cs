@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI startButtonTextBox;
     public TextMeshProUGUI scoreTextBox;
     public TextMeshProUGUI titleTextBox;
+    public TextMeshProUGUI finalScoreTextBox;
     private int score;
     private int stampCount;
 
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         stampCount = 0;
         scoreTextBox.gameObject.SetActive(false);
+        finalScoreTextBox.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -64,6 +66,9 @@ public class GameManager : MonoBehaviour
     {
         startButton.SetActive(false);
         titleTextBox.gameObject.SetActive(false);
+        finalScoreTextBox.gameObject.SetActive(false);
+        stampCount = 0;
+        score = 0;
         scoreTextBox.text = "Stamps Stolen: " + score;
         scoreTextBox.gameObject.SetActive(true);
         SceneManager.LoadScene("Main_Game");
@@ -72,11 +77,22 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         StopAllCoroutines();
-        stampCount = 0;
-        score = 0;
         scoreTextBox.gameObject.SetActive(false);
         startButton.SetActive(true);
         startButtonTextBox.SetText("Try again?");
         SceneManager.LoadScene("Game_Over");
+    }
+
+    public void GoToWinScreen()
+    {
+        StopAllCoroutines();
+        scoreTextBox.gameObject.SetActive(false);
+        startButton.SetActive(true);
+        startButtonTextBox.SetText("Play again?");
+        titleTextBox.gameObject.SetActive(true);
+        titleTextBox.SetText("You Escaped With the Stamps!");
+        finalScoreTextBox.SetText("Stamps Stolen: " + score);
+        finalScoreTextBox.gameObject.SetActive(true);
+        SceneManager.LoadScene("Victory_Screen");
     }
 }

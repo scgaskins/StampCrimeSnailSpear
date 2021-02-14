@@ -10,6 +10,7 @@ public class SpawnStamps : MonoBehaviour
 
     public GameObject guard;
     public GameObject stamp;
+    public GameObject player;
     public int maxStampCount;
 
     // Start is called before the first frame update
@@ -31,11 +32,20 @@ public class SpawnStamps : MonoBehaviour
     private void SpawnStamp()
     {
         GameObject stampInstance = Instantiate(stamp);
-        Vector2 stampPos = new Vector2(Random.Range(-xRandom, xRandom), Random.Range(-yRandom, yRandom));
-        stampInstance.transform.position = stampPos;
-
-        GameObject guardInstance = Instantiate(guard);
-        guardInstance.transform.position = stampPos;
-        GameManager.Instance.IncrementStampCount(1);
+        Vector2 playerPos = player.transform.position;
+        Vector2 stampPos;
+        bool foundPosition = false;
+        while (!foundPosition) // Keeps the stamp and guard from spawning on top of player
+        {
+            stampPos = new Vector2(Random.Range(-xRandom, xRandom), Random.Range(-yRandom, yRandom));
+            if (stampPos.x != playerPos.x || stampPos.y != playerPos.y)
+            {
+                foundPosition = true;
+                stampInstance.transform.position = stampPos;
+                GameObject guardInstance = Instantiate(guard);
+                guardInstance.transform.position = stampPos;
+                GameManager.Instance.IncrementStampCount(1);
+            }
+        }
     }
 }
