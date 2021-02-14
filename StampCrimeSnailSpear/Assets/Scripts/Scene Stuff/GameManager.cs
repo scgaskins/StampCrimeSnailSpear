@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
         startButton.SetActive(true);
         startButtonTextBox.SetText("Play again?");
         titleTextBox.gameObject.SetActive(true);
-        titleTextBox.SetText("You Escaped With the Stamps!");
+        titleTextBox.SetText("You Made It!");
         finalScoreTextBox.SetText("Stamps Stolen: " + score);
         finalScoreTextBox.gameObject.SetActive(true);
         SceneManager.LoadScene("Victory_Screen");
