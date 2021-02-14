@@ -22,6 +22,7 @@ public class Sign : MonoBehaviour
     {
         if (collision.gameObject.name == "Snail")
         {
+            Debug.Log("Player entered sign");
             GameManager.Instance.StartDialog(text);
         }
     }
@@ -29,6 +30,7 @@ public class Sign : MonoBehaviour
     {
         if(collision.gameObject.name == "Snail")
         {
+            Debug.Log("Player left sign");
             GameManager.Instance.HideDialog();
         }
     }
