@@ -1616,8 +1616,8 @@ MonoBehaviour:
   scoreTextBox: {fileID: 1638170262}
   titleTextBox: {fileID: 211055204}
   finalScoreTextBox: {fileID: 891997809}
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 1136441254}
+  dialogText: {fileID: 185018621}
 --- !u!4 &1686390082
 Transform:
   m_ObjectHideFlags: 0
