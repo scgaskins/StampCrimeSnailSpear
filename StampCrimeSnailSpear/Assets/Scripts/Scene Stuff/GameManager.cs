@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreTextBox;
     public TextMeshProUGUI titleTextBox;
     public TextMeshProUGUI finalScoreTextBox;
+
+    public GameObject dialogBox;
+    public GameObject dialogText;
+
     private int score;
     private int stampCount;
 
@@ -50,6 +54,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void StartDialog(string text)
+    {
+        dialogBox.SetActive(true);
+    }
+    public void HideDialog()
+    {
+        dialogBox.SetActive(false);
     }
 
     public void IncrementStampCount(int changeInStamps)
