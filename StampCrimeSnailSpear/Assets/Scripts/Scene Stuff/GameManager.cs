@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         StopAllCoroutines();
+        dialogBox.SetActive(false);
         scoreTextBox.gameObject.SetActive(false);
         startButton.SetActive(true);
         startButtonTextBox.SetText("Try again?");
